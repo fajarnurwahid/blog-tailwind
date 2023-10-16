@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .swiper-popular .swiper-pagination-bullet {
+        @apply !mx-[3px] bg-white/30 opacity-100;
+    }
+    .swiper-popular .swiper-pagination-bullet-active {
+        @apply bg-indigo-500;
+    }
+    .swiper-trending .swiper-button-prev,
+    .swiper-trending .swiper-button-next {
+        @apply w-8 h-8 rounded-full bg-indigo-500 [--swiper-navigation-size:14px] text-white;
+    }
+}
